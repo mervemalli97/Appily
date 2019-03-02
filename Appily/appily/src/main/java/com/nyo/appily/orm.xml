@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.nyo.appily.Models.ChoresEntity">
+        <table name="chores" schema="public" catalog="dalmm4hdjlfmnd"/>
+        <attributes>
+            <id name="choreid">
+                <column name="choreid" precision="-1"/>
+            </id>
+            <basic name="title">
+                <column name="title" nullable="false"/>
+            </basic>
+            <basic name="description">
+                <column name="description;" nullable="false"/>
+            </basic>
+            <basic name="ischoredone">
+                <column name="ischoredone" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.nyo.appily.Models.NotesEntity">
+        <table name="notes" schema="public" catalog="dalmm4hdjlfmnd"/>
+        <attributes>
+            <id name="noteid">
+                <column name="noteid" precision="-1"/>
+            </id>
+            <basic name="title">
+                <column name="title" nullable="false"/>
+            </basic>
+            <basic name="text">
+                <column name="text" nullable="false"/>
+            </basic>
+            <basic name="timeStamp">
+                <column name="timeStamp" nullable="false"/>
+            </basic>
+            <basic name="leftByUser">
+                <column name="leftByUser" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.nyo.appily.Models.UsersEntity">
+        <table name="users" schema="public" catalog="dalmm4hdjlfmnd"/>
+        <attributes>
+            <id name="userid">
+                <column name="userid" precision="-1"/>
+            </id>
+            <basic name="usrName">
+                <column name="usrName" nullable="false"/>
+            </basic>
+            <basic name="usrSurname">
+                <column name="usrSurname" nullable="false"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false"/>
+            </basic>
+            <basic name="password">
+                <column name="password" nullable="false"/>
+            </basic>
+            <basic name="dislikedChore">
+                <column name="dislikedChore" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
